@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root {
+    --primary-blue: #3f8cff;
+    --primary-blue-dark: #4361ee;
+    --text-white: #f7faff;
+    --text-gray: #b5b8bc;
+    --text-color: #303651;
+    --text-color-neutral: #697089;
+    --card-bg: #222429;
+    --bg: #141419;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background-color: var(--card-bg);
+    height: 500px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-items {
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    height: 120px;
+}
+
+.card-items,
+.upper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy {
+    background-color: var(--primary-blue);
+    padding: 10px 90px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--text-white);
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--text-white);
+}
+
+p,
+s,
+li {
+    color: var(--text-gray);
+}
+
+.details {
+    margin-left: 25px;
+    height: 230px;
+    width: 250px;
+    /* border: 1px solid white; */
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.buy:hover {
+    background-color: var(--primary-blue-dark);
+}
+
+.extra {
+    height: 530px;
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+.extraa {
+    height: 30px;
+    width: 100%;
+    background-color: var(--primary-blue);
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-weight: 100;
+    font-size: 14px;
+}
